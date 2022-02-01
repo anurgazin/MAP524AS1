@@ -18,6 +18,7 @@
     <string name="clear">C</string>
     <string name="equal">=</string>
     <string name="advance">Advance-With History</string>
+    <string name="standard">Standard</string>
     <string name="percent">%</string>
     <string name="pow">Pow</string>
     <string name="min">Min</string>

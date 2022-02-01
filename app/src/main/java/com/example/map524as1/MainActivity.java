@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 
@@ -22,6 +23,26 @@ public class MainActivity extends AppCompatActivity {
     void show(String value){
         String old = display.getText().toString();
         display.setText(String.format("%s%s", old, value));
+    }
+    public void buttonAdv(View view){
+        Button percent = findViewById(R.id.buttonPercent);
+        Button pow = findViewById(R.id.buttonPow);
+        Button min = findViewById(R.id.buttonMin);
+        Button max = findViewById(R.id.buttonMax);
+        Button adv = findViewById(R.id.buttonAdvance);
+        if(getString(R.string.advance).equals(adv.getText().toString())){
+            adv.setText(getString(R.string.standard));
+            percent.setVisibility(View.VISIBLE);
+            pow.setVisibility(View.VISIBLE);
+            min.setVisibility(View.VISIBLE);
+            max.setVisibility(View.VISIBLE);
+        }else{
+            adv.setText(getString(R.string.advance));
+            percent.setVisibility(View.GONE);
+            pow.setVisibility(View.GONE);
+            min.setVisibility(View.GONE);
+            max.setVisibility(View.GONE);
+        }
     }
     public void button1(View view){
         show("1");

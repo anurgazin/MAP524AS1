@@ -7,12 +7,12 @@ public class Calculator {
     void push(String value){
         arguments.add(value);
     }
-    public static boolean isNumeric(String strNum) {
-        if (strNum == null) {
+    public static boolean isNumeric(String string) {
+        if (string == null) {
             return false;
         }
         try {
-            int d = Integer.parseInt(strNum);
+            int d = Integer.parseInt(string);
         } catch (NumberFormatException nfe) {
             return false;
         }
@@ -41,22 +41,22 @@ public class Calculator {
     }
     int calculate() throws Exception {
         int result = 0;
-        int flag = 0;
+        int isFirst = 0;
         String operation = "";
         int size = arguments.size();
         boolean isFirstNumber = isNumeric(arguments.get(0));
         boolean isLastNumber = isNumeric(arguments.get(size - 1));
         if(size >= 3 && isFirstNumber && isLastNumber) {
-            for(String argument : arguments) {
-                if (isNumeric(argument)) {
-                    if (flag == 0) {
-                        result = Integer.parseInt(argument);
+            for(int i = 0; i < size; i++) {
+                if (isNumeric(arguments.get(i))) {
+                    if (isFirst == 0) {
+                        result = Integer.parseInt(arguments.get(i));
                     }else{
-                        result = calculation(result, operation, Integer.parseInt(argument));
+                        result = calculation(result, operation, Integer.parseInt(arguments.get(i)));
                     }
                 }else{
-                    operation = argument;
-                    flag = 1;
+                    operation = arguments.get(i);
+                    isFirst = 1;
                 }
             }
         }else{

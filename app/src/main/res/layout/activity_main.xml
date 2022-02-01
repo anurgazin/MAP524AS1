@@ -16,16 +16,17 @@
         android:background="@color/teal_200"
         android:text="@string/as1"
         />
+
     <EditText
         android:id="@+id/valueField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
-        android:textSize="30sp"
         android:autofillHints="false"
         android:inputType="none"
-        tools:ignore="LabelFor" />
+        android:textSize="30sp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:layout_width="362dp"
@@ -220,15 +221,16 @@
         android:layout_marginTop="15dp"
         android:gravity="center"
         >
+
         <Button
-            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
-            android:textColor="@color/white"
             android:id="@+id/buttonAdvance"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/advance"
-            />
+            android:onClick="buttonAdv"
+            android:text="@string/standard"
+            android:textColor="@color/white" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
