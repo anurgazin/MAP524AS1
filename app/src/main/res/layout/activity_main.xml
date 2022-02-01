@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:background="@color/teal_200"
+        android:text="@string/as1"
+        />
+    <EditText
+        android:id="@+id/valueField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="30sp"
+        android:autofillHints="false"
+        android:inputType="none"
+        tools:ignore="LabelFor" />
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button1"
+            android:text="@string/one"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button2"
+            android:text="@string/two"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button3"
+            android:text="@string/three"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonP"
+            android:text="@string/plus"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        >
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button4"
+            android:text="@string/four"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button5"
+            android:text="@string/five"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button6"
+            android:text="@string/six"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonM"
+            android:text="@string/minus"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        >
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button7"
+            android:text="@string/seven"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button8"
+            android:text="@string/eight"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button9"
+            android:text="@string/nine"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonMul"
+            android:text="@string/multiply"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        >
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonC"
+            android:text="@string/clear"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/button0"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button0"
+            android:text="@string/zero"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonEqual"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonE"
+            android:text="@string/equal"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonDiv"
+            android:text="@string/divide"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        >
+        <Button
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:textColor="@color/white"
+            android:id="@+id/buttonAdvance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/advance"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        >
+
+        <Button
+            android:id="@+id/buttonPercent"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonPercent"
+            android:text="@string/percent"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonPow"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonPow"
+            android:text="@string/pow"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonMin"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonMin"
+            android:text="@string/min"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/buttonMax"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonMax"
+            android:text="@string/max"
+            android:textColor="@color/white"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
+</LinearLayout>
